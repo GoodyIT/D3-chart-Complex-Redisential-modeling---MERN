@@ -1,0 +1,696 @@
+{
+  "name": "Newton Residence",
+  "description-file": "description.md",
+  "location": "Bucsinescu - Oancea, Strada Orfelinatului, Iași 700259",
+  "location-GPS-point": "47.159444, 27.610089",
+  "location-GPS-shape-coords": [
+    "868, 531.5625",
+    "1047, 531.5625",
+    "1046, 646.5625",
+    "989, 663.5625",
+    "858, 598.5625"
+  ],
+  "RC-views": [
+    {
+      "degrees-from-north": "-90",
+      "img-file": "RC-view-1.jpg",
+      "buildings": [
+        "344, 398.5625, 337, 238.5625, 353, 229.5625, 353, 203.5625, 366, 200.5625, 365, 192.5625, 457, 168.5625, 524, 183.5625, 522, 198.5625, 539, 204.5625, 540, 238.5625, 566, 247.5625, 562, 420.5625, 489, 461.5625",
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "degrees-from-north": 0,
+      "img-file": "RC-view-2.jpg",
+      "buildings": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "degrees-from-north": 90,
+      "img-file": "RC-view-3.jpg",
+      "buildings": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "degrees-from-north": 40,
+      "img-file": "RC-view-4.jpg",
+      "buildings": [
+        [
+          "344, 398.5625",
+          "337, 238.5625",
+          "353, 229.5625",
+          "353, 203.5625",
+          "366, 200.5625",
+          "365, 192.5625",
+          "457, 168.5625",
+          "524, 183.5625",
+          "522, 198.5625",
+          "539, 204.5625",
+          "540, 238.5625",
+          "566, 247.5625",
+          "562, 420.5625",
+          "489, 461.5625"
+        ],
+        [
+          "233, 354.0625",
+          "220, 203.0625",
+          "233, 200.0625",
+          "229, 166.0625",
+          "332, 144.0625",
+          "386, 156.0625",
+          "385, 170.0625",
+          "402, 177.0625",
+          "395, 183.0625",
+          "368, 190.0625",
+          "368, 200.0625",
+          "354, 204.0625",
+          "353, 228.0625",
+          "337, 238.0625",
+          "344, 399.0625"
+        ],
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "unique-floor-plans": [
+    {
+      "id": 1,
+      "img-file": "1.jpg",
+      "used-count": 1
+    },
+    {
+      "id": 2,
+      "img-file": "2.jpg",
+      "used-count": 5
+    }
+  ],
+  "buildings": [
+    {
+      "id": "B1",
+      "name": "Bloc 1",
+      "ready-date": "2018, June",
+      "construction-state": "DONE",
+      "floors-count": 9,
+      "floors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "best-individual-view": {
+        "ref-img-file": "RC-view-5",
+        "edges": {
+          "highest-edge": "10,0,10,100",
+          "top-cover": "",
+          "left-most-edge": "",
+          "right-most-edge": "",
+          "corner-edge": "89,89,88,100"
+        }
+      },
+      "aps": [
+        {
+          "id": 1,
+          "floor": 0,
+          "ap-type-id": 1,
+          "overriden-price": 55000
+        },
+        {
+          "id": 2,
+          "floor": 0,
+          "ap-type-id": 2,
+          "availability": "RESERVED"
+        },
+        {
+          "id": 3,
+          "floor": 1,
+          "ap-type-id": 1,
+          "availability": "RESERVED"
+        },
+        {
+          "id": 4,
+          "floor": 1,
+          "ap-type-id": 2,
+          "overriden-price": 59000
+        },
+        {
+          "id": 5,
+          "floor": 7,
+          "ap-type-id": 1,
+          "availability": "SOLD"
+        },
+        {
+          "id": 6,
+          "floor": 8,
+          "ap-type-id": 1,
+          "overriden-price": 55000
+        },
+        {
+          "id": 7,
+          "floor": 9,
+          "ap-type-id": 9,
+          "overriden-price": 150000
+        },
+        {
+          "id": 8,
+          "floor": 9,
+          "ap-type-id": 10
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "Bloc 2",
+      "ready-date": "2019, June",
+      "construction-state": "DESIGNED",
+      "floors-count": 9,
+      "floors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "aps": [
+        {
+          "id": 1,
+          "floor": 0,
+          "ap-type-id": 1,
+          "overriden-price": 55000
+        },
+        {
+          "id": 2,
+          "floor": 0,
+          "ap-type-id": 2,
+          "availability": "RESERVED"
+        },
+        {
+          "id": 3,
+          "floor": 1,
+          "ap-type-id": 1,
+          "availability": "RESERVED"
+        },
+        {
+          "id": 4,
+          "floor": 1,
+          "ap-type-id": 2,
+          "overriden-price": 59000
+        },
+        {
+          "id": 5,
+          "floor": 7,
+          "ap-type-id": 1,
+          "availability": "SOLD"
+        },
+        {
+          "id": 6,
+          "floor": 8,
+          "ap-type-id": 1,
+          "overriden-price": 55000
+        },
+        {
+          "id": 7,
+          "floor": 9,
+          "ap-type-id": 9,
+          "overriden-price": 150000
+        },
+        {
+          "id": 8,
+          "floor": 9,
+          "ap-type-id": 10
+        }
+      ]
+    }
+  ],
+  "ap-types": [
+    {
+      "id": 1,
+      "name": "1 Camera - tip A",
+      "img-file": "1c-tipA.jpg",
+      "ap-plan": "1c-tipA.png",
+      "area-utila": 30,
+      "area-terase": 3,
+      "price": 50000,
+      "total-aps-of-type-count": 12,
+      "available-aps-of-type-count": 0,
+      "promo": "44.500 euro + TVA 5%",
+      "rooms-count": 1,
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "17.6",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": 6,
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "4.1",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": "2.9"
+        },
+        {
+          "name": "Balcon inchis",
+          "area": "2.9"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "1 Camera - tip B",
+      "img-file": "1c-tipB.jpg",
+      "ap-plan": "1c-tipB.png",
+      "area-utila": 33,
+      "area-terase": 11,
+      "price": 59000,
+      "promo": "56.190 euro + TVA 5%",
+      "rooms-count": 1,
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "16.5",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "8.2",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "4.2",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": "4.8"
+        },
+        {
+          "name": "Balcon deschis",
+          "area": "11.5"
+        }
+      ]
+    },
+    {
+      "name": "2 Camere - tip A",
+      "img-file": "2c-tipA.jpg",
+      "plan": "2c-tipA.png",
+      "area-utila": 47,
+      "area-terase": 5,
+      "price": 72800,
+      "promo": "66.455 euro + TVA 5% (-3022€)",
+      "rooms-count": "",
+      "rooms": [
+        {
+          "name": "Living",
+          "area": 16,
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Dormitor",
+          "area": "12.2",
+          "pictures": [
+            "dormitor.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "6.2",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "4.4",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": "6.5"
+        },
+        {
+          "name": "Balcon deschis",
+          "area": "7.4"
+        }
+      ]
+    },
+    {
+      "name": "2 Camere - tip B",
+      "img-file": "2c-tipB.jpg",
+      "plan": "2c-tipB.png",
+      "area-total": 54,
+      "area-utila": 49,
+      "area-terase": 5,
+      "price": 75600,
+      "promo": "68.380 euro + TVA 5%",
+      "rooms-count": 2,
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "16.3",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Dormitor",
+          "area": "12.8",
+          "pictures": [
+            "dormitor.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "7.3",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "4.5",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": "5.6"
+        },
+        {
+          "name": "Balcon deschis",
+          "area": 8
+        }
+      ]
+    },
+    {
+      "name": "2 Camere - tip C",
+      "img-file": "2c-tipC.jpg",
+      "plan": "2c-tipC.png",
+      "area-total": 61,
+      "area-utila": 49,
+      "area-terase": 12,
+      "area-terase-comment": "19 eronat",
+      "price": 76000,
+      "promo": "72.300 euro + TVA 5%",
+      "rooms-count": 2,
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "16.9",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Dormitor",
+          "area": "14.3",
+          "pictures": [
+            "dormitor.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "6.9",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "4.5",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": "6.2"
+        },
+        {
+          "name": "Balcon deschis",
+          "area": 12,
+          "area-comment": "19 eronat"
+        }
+      ]
+    },
+    {
+      "name": "3 Camere - tip A",
+      "img-file": "3c-tipA.jpg",
+      "plan": "3c-tipA.png",
+      "area-utila": "",
+      "area-terase": "",
+      "price": "",
+      "promo": "84.750 euro + TVA 5%",
+      "rooms-count": 3,
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Dormitor",
+          "area": "",
+          "pictures": [
+            "dormitor.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": ""
+        },
+        {
+          "name": "Balcon deschis",
+          "area": ""
+        }
+      ]
+    },
+    {
+      "name": "2 Camere - tip iip18",
+      "img-file": "2c-tipiip18.jpg",
+      "plan": "2c-tipiip18.png",
+      "plan-etaj": "plan-etaj_2c-tipiip18.png",
+      "area-total": 51,
+      "area-utila": "",
+      "area-terase": "",
+      "price": "",
+      "status": "epuizat",
+      "rooms-count": 2
+    },
+    {
+      "name": "2 Camere - tip ii18",
+      "img-file": "2c-tipii18.jpg",
+      "plan": "2c-tipii18.png",
+      "area-total": 49,
+      "area-utila": "",
+      "area-terase": "",
+      "price": "",
+      "status": "epuizat",
+      "rooms-count": 2
+    },
+    {
+      "id": 9,
+      "name": "3 Camere - tip penthouse111",
+      "img-file": "3camtippenthouse111.jpg",
+      "plan": "3camtippenthouse111.png",
+      "plan-etaj": "plan-etaj_3camtippenthouse111.png",
+      "area-total": "",
+      "area-utila": 91,
+      "area-terase": 73,
+      "etaj": 11,
+      "termen-predare": "2-3 saptamani",
+      "price": 179000,
+      "promo": " euro + TVA 5%",
+      "rooms-count": 3,
+      "rooms": [
+        {
+          "name": "Terasa 1",
+          "area": 36,
+          "pictures": [
+            "terasa-penthouse.jpg"
+          ]
+        },
+        {
+          "name": "Terasa 2",
+          "area": 37,
+          "pictures": [
+            "terasa-penthouse.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "3 Camere - tip penthouse112",
+      "img-file": "3camtippenthouse112.jpg",
+      "plan": "3camtippenthouse112.png",
+      "plan-etaj": "plan-etaj_3camtippenthouse112.png",
+      "area-total": "",
+      "area-utila": 95,
+      "area-terase": 73,
+      "etaj": 11,
+      "price": 195000,
+      "rooms-count": 3,
+      "rooms": [
+        {
+          "name": "Terasa 1",
+          "area": 36,
+          "pictures": [
+            "terasa-penthouse.jpg"
+          ]
+        },
+        {
+          "name": "Terasa 2",
+          "area": 37,
+          "pictures": [
+            "terasa-penthouse.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3 Camere - tip VII",
+      "img-file": "3camtipviii91.jpg",
+      "plan": "3camtipviii91.png",
+      "plan-etaj": "plan-etaj_3camtipviii91.png",
+      "area-total": "",
+      "area-utila": 73,
+      "area-terase": 30,
+      "etaj": 9,
+      "price": 108000,
+      "rooms-count": 3
+    },
+    {
+      "name": "$ Camere - tip MODEL",
+      "img-file": "$c-tipMODEL.jpg",
+      "plan": "$c-tipMODEL.png",
+      "area-total": "",
+      "area-utila": "",
+      "area-terase": "",
+      "price": "",
+      "promo": " euro + TVA 5%",
+      "rooms-count": "$",
+      "rooms": [
+        {
+          "name": "Living",
+          "area": "",
+          "pictures": [
+            "living1.jpg",
+            "living3.jpg",
+            "living2.jpg"
+          ]
+        },
+        {
+          "name": "Dormitor",
+          "area": "",
+          "pictures": [
+            "dormitor.jpg"
+          ]
+        },
+        {
+          "name": "Bucatarie",
+          "area": "",
+          "pictures": [
+            "bucatarie.jpg"
+          ]
+        },
+        {
+          "name": "Baie",
+          "area": "",
+          "pictures": [
+            "baie.jpg"
+          ]
+        },
+        {
+          "name": "Hol",
+          "area": ""
+        },
+        {
+          "name": "Balcon deschis",
+          "area": ""
+        }
+      ]
+    }
+  ]
+}
