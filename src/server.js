@@ -11,6 +11,32 @@ const file = path.join(__dirname, './data.json');
 
 const port = 8000;
 
+const isDevMode = process.env.NODE_ENV === 'development' || false;
+const isProdMode = process.env.NODE_ENV === 'production' || false;
+
+// Run Webpack dev server in development mode
+if (isDevMode) {
+  // Webpack Requirements
+  // eslint-disable-next-line global-require
+  const webpack = require('webpack');
+  // eslint-disable-next-line global-require
+  const config = require('../webpack.config.dev');
+  // eslint-disable-next-line global-require
+  const webpackDevMiddleware = require('webpack-dev-middleware');
+  // eslint-disable-next-line global-require
+  const webpackHotMiddleware = require('webpack-hot-middleware');
+  const compiler = webpack(config);
+  app.use(webpackDevMiddleware(compiler, {
+    noInfo: true,
+    publicPath: config.output.publicPath,
+    watchOptions: {
+      poll: 1000,
+    },
+  }));
+  app.use(webpackHotMiddleware(compiler));
+}
+
+
 const DATA_PATH = path.join(__dirname, './test_dataset/');
 // console.log(DATA_PATH)
 
