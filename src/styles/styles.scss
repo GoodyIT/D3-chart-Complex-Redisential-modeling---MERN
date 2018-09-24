@@ -1,0 +1,92 @@
+/* Variables */
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #ff0000;
+
+/* Styles */
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+td {
+	padding: 12px;
+}
+
+h2 {
+	color: $vin-blue;
+}
+
+.savings { color: $vin-green; }
+.loss { color: $vin-red; }
+input.small { width: 46px; }
+td.fuel-savings-label { width: 175px; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  min-width: 300px;
+  
+  .side-top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  ul.right-sidebar {
+    width: 300px;
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: translate-z(0);
+  }
+
+  .nested {
+    padding-left: 40px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .textField {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .formControl {
+    margin: 10px;
+    min-width: 300px;
+  }
+
+  .selectEmpty {
+    margin-top: 20px;
+  }
+}
+
+svg.working-board {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
