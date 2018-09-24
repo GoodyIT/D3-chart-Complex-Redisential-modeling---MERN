@@ -1,6 +1,6 @@
-### Admin Tool
+# Admin Tool
  ## Spec
- # NodeJs, ExpressJS, ReactJS, Json
+ ### NodeJs, ExpressJS, ReactJS, Json
 
 1. **Run the setup script**
 
@@ -10,4 +10,4 @@
 
     `npm start -s`
 
-# Project running on http://localhost:3000
+### Project running on http://localhost:3000
