@@ -1,6 +1,5 @@
 # Admin Tool
- ## Spec
- ### NodeJs, ExpressJS, ReactJS, Json
+  ### NodeJs, ExpressJS, ReactJS, Json
 
 1. **Run the setup script**
 
