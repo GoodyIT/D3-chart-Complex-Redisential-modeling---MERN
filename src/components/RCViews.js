@@ -223,14 +223,17 @@ class RCViews extends Component {
     if(drawing) return;
     var newPoints = [], circle;
     dragging = true;
-    var poly = svg.select("#polyID"+activeID).select('polygon');
-    var circles = svg.select("#polyID"+activeID).selectAll('circle');
+    var poly = svg.select(this.parentNode).select('polygon');
+    var circles = svg.select(this.parentNode).selectAll('circle');
 
-    svg.select("#polyID"+activeID).select('circle.active')
+    // var poly = svg.select("#polyID"+activeID).select('polygon');
+    // var circles = svg.select("#polyID"+activeID).selectAll('circle');
+
+    d3.select(this)
         .attr('cx', d3.event.x)
         .attr('cy', d3.event.y);
-    for (var i = 0; i < circles._groups[0].length; i++) {
-        circle = d3.select(circles._groups[0][i]);
+    for (var i = 0; i < circles[0].length; i++) {
+        circle = d3.select(circles[0][i]);
         newPoints.push([circle.attr('cx'), circle.attr('cy')]);
     }
     poly.attr('points', newPoints);
@@ -289,10 +292,29 @@ class RCViews extends Component {
 
         dragger = d3.drag()
           .on('start', function() {
-            d3.select(this).raise().classed("active", true);
-            activeID = d3.select(this.parentNode).attr('id').replace('polyID', '')
+            dragging  = true;
+            // d3.select(this).raise().classed("active", true);
+            // activeID = d3.select(this.parentNode).attr('id').replace('polyID', '')
           })
-          .on('drag', self.handleDrag)
+          .on('drag', function() {
+            if(drawing) return;
+            var newPoints = [], circle;
+            dragging = true;
+            var poly = d3.select(this.parentNode).select('polygon');
+            var circles = d3.select(this.parentNode).selectAll('circle');
+        
+            // var poly = svg.select("#polyID"+activeID).select('polygon');
+            // var circles = svg.select("#polyID"+activeID).selectAll('circle');
+        
+            d3.select(this)
+                .attr('cx', d3.event.x)
+                .attr('cy', d3.event.y);
+            for (var i = 0; i < circles._groups[0].length; i++) {
+                circle = d3.select(circles._groups[0][i]);
+                newPoints.push([circle.attr('cx'), circle.attr('cy')]);
+            }
+            poly.attr('points', newPoints);
+          })
           .on('end', function(){
               dragging = false;
               d3.select(this).classed("active", false);
